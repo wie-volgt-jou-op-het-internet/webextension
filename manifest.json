@@ -1,0 +1,27 @@
+{
+  "name": "Wie volgt jou op het internet?",
+  "version": "1.0",
+  "description": "Wie volgt jou op het internet?",
+  "manifest_version": 3,
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": [
+    "webNavigation",
+    "webRequest"
+  ],
+  "host_permissions": [
+    "*://*/*"
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "trackers.json"
+      ],
+      "matches": [
+        "*://*/*"
+      ]
+    }
+  ],
+  "action": {}
+}
